@@ -1,0 +1,50 @@
+node-json-stable-stringify (1.0.1+~cs5.2.33-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.1
+  * Add ctype=nodejs to component(s)
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix d/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Drop dependency to nodejs
+  * New upstream version 1.0.1+~cs5.2.33, updates:
+    + @types/json-stable-stringify 1.0.33
+    + @types/fast-json-stable-stringify 2.1.0
+
+ -- Yadd <yadd@debian.org>  Sat, 06 Nov 2021 19:04:37 +0100
+
+node-json-stable-stringify (1.0.1+~cs5.1.32-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto install
+  * Embed fast-json-stable-stringify and typescript definitions
+  * New upstream version 1.0.1+~cs5.1.32 (no other changes)
+  * Enable upstream test using tape
+    (both json-stable-stringify and fast-json-stable-stringify)
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 08 Nov 2020 08:33:58 +0100
+
+node-json-stable-stringify (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #846191)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 29 Nov 2016 12:33:39 +0530

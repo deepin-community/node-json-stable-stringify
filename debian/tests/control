@@ -1,0 +1,3 @@
+Test-Command: cd fast-json-stable-stringify && sh -e ../debian/nodejs/fast-json-stable-stringify/test
+Depends: @, node-tape
+Features: test-name=fast-json-stable-stringify-test
