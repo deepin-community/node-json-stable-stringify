@@ -2,7 +2,7 @@ version=4
 opts=\
 dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
 filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-json-stable-stringify-$1/ \
- https://github.com/substack/json-stable-stringify/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+ https://github.com/ljharb/json-stable-stringify/tags .*/archive/.*/v?([\d\.]+).tar.gz group
 
 opts=\
 searchmode=plain,\
@@ -12,17 +12,3 @@ pgpmode=none,\
 filenamemangle=s/.*?(\d[\d\.]*@ARCHIVE_EXT@)/node-types-json-stable-stringify-$1/ \
  https://registry.npmjs.org/@types/json-stable-stringify https://registry.npmjs.org/@types/json-stable-stringify/-/json-stable-stringify-([\d\.]+)@ARCHIVE_EXT@ checksum
 
-opts=\
-ctype=nodejs,\
-component=fast-json-stable-stringify,\
-dversionmangle=auto,\
-filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-fast-json-stable-stringify-$1/ \
- https://github.com/epoberezkin/fast-json-stable-stringify/tags .*/archive/.*/v?([\d\.]+).tar.gz checksum
-
-opts=\
-searchmode=plain,\
-ctype=nodejs,\
-component=types-fast-json-stable-stringify,\
-pgpmode=none,\
-filenamemangle=s/.*?(\d[\d\.]*@ARCHIVE_EXT@)/node-types-fast-json-stable-stringify-$1/ \
- https://registry.npmjs.org/@types/fast-json-stable-stringify https://registry.npmjs.org/@types/fast-json-stable-stringify/-/fast-json-stable-stringify-([\d\.]+)@ARCHIVE_EXT@ checksum

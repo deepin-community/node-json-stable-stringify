@@ -1,18 +1,11 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: json-stable-stringify
-Upstream-Contact: https://github.com/substack/json-stable-stringify/issues
-Source: https://github.com/substack/json-stable-stringify
+Upstream-Contact: https://github.com/ljharb/json-stable-stringify/issues
+Source: https://github.com/ljharb/json-stable-stringify
  https://registry.npmjs.org/@types/json-stable-stringify
- https://github.com/epoberezkin/fast-json-stable-stringify/tags
- https://registry.npmjs.org/@types/fast-json-stable-stringify
 
 Files: *
 Copyright: 2016 James Halliday <mail@substack.net>
-License: Expat
-
-Files: fast-json-stable-stringify/*
-Copyright: 2017 Evgeny Poberezkin
- 2013 James Halliday <mail@substack.net>
 License: Expat
 
 Files: types-*/*
