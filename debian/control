@@ -5,12 +5,13 @@ Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.deb
 Uploaders: Pirate Praveen <praveen@debian.org>
 Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
+ , dh-nodejs
  , node-jsonify <!nocheck>
  , node-tape <!nocheck>
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-json-stable-stringify
 Vcs-Git: https://salsa.debian.org/js-team/node-json-stable-stringify.git
-Homepage: https://github.com/substack/json-stable-stringify
+Homepage: https://github.com/ljharb/json-stable-stringify
 Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
@@ -19,6 +20,7 @@ Architecture: all
 Depends: ${misc:Depends}
  , node-jsonify
 Provides: ${nodejs:Provides}
+Multi-Arch: foreign
 Description: deterministic JSON.stringify()
  It comes with custom sorting to get deterministic hashes from stringified
  results
